@@ -5,7 +5,6 @@ description: Suggest a commit message for staged changes
 I have staged changes and need a commit message suggestion.
 
 Review what's staged by running:
-- `git status --short` — overall state
 - `git diff --cached --stat` — summary of staged files
 - `git log --oneline -5` — recent commit style reference
 
