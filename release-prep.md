@@ -2,7 +2,7 @@
 description: Prepare release notes by drafting description.md from recent commits
 ---
 
-Let's prepare release notes for the next version.
+Let's prepare release notes for the next version. Follow these instructions:
 
 1. Find the last release tag:
    `gh release list --limit 1 --json tagName --jq '.[0].tagName'`
@@ -10,8 +10,7 @@ Let's prepare release notes for the next version.
    `git log --oneline <last-tag>..HEAD`
 3. Increment the patch version (e.g. v0.0.7 -> v0.0.8)
 
-Write `description.md` with a "## What's New" section (user-friendly summary grouped by category) and a "## Changelog" section (commits in conventional
-format). Don't include a compare/changelog link.
+Write `description.md` with a "## What's New" section (user-friendly summary grouped by category) and a "## Changelog" section (commits in conventional format). Don't include a compare/changelog link.
 
 **Important:** The example below is minimal -- don't truncate or over-summarize to match it. Always capture the full scope of changes since the last release.
 
